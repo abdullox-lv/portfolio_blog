@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>UA group</title>
+    <link rel="icon" href="{% static 'main/img/favicon.png' %}" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/animate.css' %}" />
+    <!-- themify icon CSS -->
+    <link rel="stylesheet" href="{% static 'main/vendors/themify_icons/themify-icons.css' %}" />
+    <!-- icomoon css -->
+    <link rel="stylesheet" href="{% static 'main/vendors/icomoon/style.css' %}" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+
+</head>
+
+<body>
+
+  <!-- preloader -->
+  <div class="preloader-wrapper" id="preloader-wrapper">
+      <div class="percentage-wrapper">
+          <div class="loadbar-percent"></div>
+          <div id="percent"></div>
+      </div>
+  </div>
+  <!-- preloader end -->
+
+  {% include 'main/details/navigation.html' %}
+
+  {% block content %}
+
+  {% endblock content %}
+
+  <!-- jquery slim -->
+  <script src="{% static 'main/js/jquery-3.6.0.min.js' %}"></script>
+  <!-- popper js -->
+  <script src="{% static 'main/js/popper.min.js' %}"></script>
+  <!-- bootstarp js -->
+  <script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+  <!-- isotope js -->
+  <script src="{% static 'main/vendors/isotop/isotope.pkgd.js' %}"></script>
+  <!-- wow js -->
+  <script src="{% static 'main/vendors/wow/wow.min.js' %}"></script>
+  <!-- imagesloaded js -->
+  <script src="{% static 'main/vendors/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <!-- custom js -->
+  <script src="{% static 'main/js/custom.js' %}"></script>
+
+</body>
+</html>
